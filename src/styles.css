@@ -1,0 +1,143 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #edf2f7;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Typography */
+  h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Forms and Inputs */
+  form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"], input[type="number"], select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+  
+  .checkbox-group {
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 5px;
+  }
+  
+  .checkbox-group label {
+    margin-right: 20px;
+    font-size: 14px;
+    user-select: none;
+  }
+  
+  /* Buttons */
+  button {
+    display: inline-block;
+    background-color: #4a67ff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #3651f1;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Expense List */
+  ul.expenses {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .expense {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .expense h3 {
+    margin: 0;
+  }
+  
+  .expense .amount {
+    background-color: #e9ecef;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #333;
+  }
+  
+  /* Utility Classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  .mt-20 {
+    margin-top: 20px;
+  }
+  
+  .mb-20 {
+    margin-bottom: 20px;
+  }
+  
+  /* Adjustments and Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 15px;
+    }
+  
+    form {
+      padding: 15px;
+    }
+  
+    .expense {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .expense .amount {
+      margin-top: 10px;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  
